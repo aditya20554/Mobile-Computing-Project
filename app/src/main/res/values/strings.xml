@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JourneyApp</string>
+    <string name="current_stop">Current Stop</string>
+    <string name="distance">Distance</string>
+    <string name="next_stop">Next Stop</string>
+    <string name="switch_unit">Switch Unit</string>
+    <string name="total_distance_covered">Total Distance Covered: %1$.2f km</string>
+    <string name="total_distance_left">Total Distance Left: %1$.2f km</string>
+    <string name="distance_km">%1$.2f km</string>
+    <string name="distance_miles">%1$.2f miles</string>
+</resources>

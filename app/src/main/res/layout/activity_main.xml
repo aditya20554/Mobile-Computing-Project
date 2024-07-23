@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/currentStopTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Stop"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentStopTextView"
+        android:layout_marginTop="8dp"
+        android:text="Distance"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/nextStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distanceTextView"
+        android:layout_marginTop="16dp"
+        android:text="Next Stop" />
+
+    <Button
+        android:id="@+id/switchUnitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nextStopButton"
+        android:layout_marginTop="16dp"
+        android:text="Switch Unit" />
+
+    <TextView
+        android:id="@+id/totalDistanceCoveredTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchUnitButton"
+        android:layout_marginTop="16dp"
+        android:text="Total Distance Covered: 0 km"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/totalDistanceLeftTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalDistanceCoveredTextView"
+        android:layout_marginTop="8dp"
+        android:text="Total Distance Left: 0 km"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalDistanceLeftTextView"
+        android:layout_marginTop="16dp"
+        android:max="100" />
+
+</RelativeLayout>
